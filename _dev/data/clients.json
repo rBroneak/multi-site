@@ -1,0 +1,18 @@
+{
+    "clientLeadin": [{
+        "title": "clients" ,
+        "intro": "I've done work for the following clients"
+    }],
+    "clientList": [
+            "Andersenwindows",
+            "Azul7",
+            "AARP",
+            "GeekSquad",
+            "Hazelden",
+            "Heggies Pizza",
+            "Hazelden Betty Ford",
+            "Hennepin County",
+            "Intel",
+            "JambaJuice"
+        ]
+    }

@@ -1,0 +1,67 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "type";
+@import "transitions";
+
+// GENERAL
+html, body {
+	height:100%;
+}
+body {
+
+}
+// padding for the fixed nav
+.container {
+	@include cont();
+}
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.site-content {
+	flex: 1;
+}
+a[href^=tel] {
+	pointer-events: initial;
+}
+a, button, [class^=icon]{
+	-webkit-transition: color, background-color 200ms, 150ms;
+	-moz-transition: color, background-color 200ms ,150ms;
+	-ms-transition: color, background-color 200ms ,150ms;
+	-o-transition: color, background-color 200ms ,150ms;
+	transition: color, background-color 200ms ,150ms;
+}
+
+.no-touchevents  {
+	a[href^=tel] {
+		pointer-events: none;
+	}
+}
+.line-hash {
+	width: 31px;
+	height: 3px;
+	background-color: $white;
+	margin: 20px 0;
+}
+
+.inline-block {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.clearfix {
+	@include clearfix();
+}
+
+// COMPONENTS
+// header
+.global-header,
+.global-footer{
+	padding: 20px 0;
+	a {
+		margin-right: 20px;
+	}
+}

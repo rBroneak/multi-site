@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+$helvetica: 'Helvetica', sans-serif;
+$railway: 'Raleway',cursive;
+$lato: Lato,arial;
+
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering:optimizeLegibility;
+	font-family: $lato;
+}
+body, p, a, h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	-webkit-transition: opacity 200ms;
+	-moz-transition: opacity 200ms;
+	-ms-transition: opacity 200ms;
+	-o-transition: opacity 200ms;
+	transition: opacity 200ms;
+}
+body,
+p,
+a {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.125px;
+	font-style: normal;
+}
+body,
+p,
+a.btn,
+button {
+	font-family: $railway;
+	font-weight: 300;
+}
+hr {
+	border-color: $blue-sky;
+	border-bottom: 0;
+	margin: .5vw 0;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+	font-family: $railway;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+a:hover,
+a.active{
+	color: $blue-sky;
+}
+h1, .h1, h4, h6, p strong, li strong {
+	font-family: $railway;
+	font-weight: 500;
+
+}
+p {
+	margin-bottom: 20px;
+}
+ul {
+	margin-right: 4vw;
+	li {
+		padding: .5vh 0;
+		&:first-child{
+			padding-top: 0;
+		}
+	}
+}
+ol { list-style-type: decimal }
+li {
+	color: $black
+}
+.h2, h2, h3, h5, .gform_confirmation_wrapper  {
+	font-family: "ag-book",sans-serif;
+}
+.h7 {
+	font-family: $railway;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	&:hover {
+		font-weight: 300;
+	}
+}
+h1, .h1 {
+	font-size: 42px;
+	line-height: 42px;
+	text-transform: lowercase;
+	position: relative;
+	left: -3px;
+	letter-spacing: -1.5px;
+	&.no-text-style {
+		text-transform: none;
+	}
+}
+h2, .h2 {
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 0;
+	position: static;
+	text-transform: none;
+	font-weight: normal;
+}
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+}
+h5 {
+	font-size: 18px;
+	line-height: 23px;
+}
+h6 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-768) {
+	body,
+	p,
+	a,
+	h4 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	h1, .h1 {
+		font-size: 60px;
+		line-height: 60px;
+		left: -4px;
+	}
+}//end mediaQuery
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-980) {
+	h1, .h1 {
+		font-size: 80px;
+		line-height: 80px;
+		left: -5px;
+	}
+	h2, .h2 {
+		font-size: 50px;
+		line-height: 50px;
+		text-rendering:optimizeLegibility;
+	}
+	h3 {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	h4 {
+		font-size: 30px;
+		line-height: 32px;
+	}
+	h5 {
+		font-size: 25px;
+		line-height: 28px;
+	}
+	p strong {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}//end mediaQuery
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-1240) {
+	h1, .h1 {
+		font-size: 95px;
+		line-height: 95px;
+		left: -5px;
+	}
+	h5 {
+		font-size: 35px;
+		line-height: 38px;
+	}
+	h6,
+	p,
+	p strong {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}//end mediaQuery
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
