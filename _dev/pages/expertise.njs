@@ -6,7 +6,7 @@
 {% block content %}
 
 	<section class="container">
-			{% for item in clientLeadin %}
+			{% for item in expertiseLeadin %}
 				<h1>{{item.title}}</h1>
 				<h2>{{item.intro}}</h2>
 				<hr>

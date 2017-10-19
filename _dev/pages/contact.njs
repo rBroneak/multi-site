@@ -12,11 +12,9 @@
 			<hr>
 		{% endfor %}
 		<section class="primary-content">
-			<ul>
-				{% for item in contactContent %}
-					<li>{{  item }}</li>
-				{% endfor %}
-			</ul>
+			{% for item in contactContent %}
+				<p>{{  item }}</p>
+			{% endfor %}
 		</section>
 	</section>
 
