@@ -38,7 +38,7 @@ button {
 hr {
 	border-color: $blue-sky;
 	border-bottom: 0;
-	margin: .5vw 0;
+	margin: 20px 0 10px;
 }
 a,
 a:hover,
@@ -73,7 +73,6 @@ ul {
 }
 ol { list-style-type: decimal }
 li {
-	color: $black
 }
 .h2, h2, h3, h5, .gform_confirmation_wrapper  {
 	font-family: "ag-book",sans-serif;

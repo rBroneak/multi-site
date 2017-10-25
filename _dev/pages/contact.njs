@@ -4,7 +4,6 @@
 	{{nav.active('contact')}}
 {% endblock %}
 {% block content %}
-
 	<section class="container">
 		{% for item in contactLeadin %}
 			<h1>{{item.title}}</h1>
@@ -13,7 +12,10 @@
 		{% endfor %}
 		<section class="primary-content">
 			{% for item in contactContent %}
-				<p>{{  item }}</p>
+				<p>{{ item }}</p>
+			{% endfor %}
+			{% for item in contactLeadin %}
+				<a href="item.emailUrl">{{ item.email }}</a> <a href="item.linkedUrl">{{ item.linked }}</a>
 			{% endfor %}
 		</section>
 	</section>

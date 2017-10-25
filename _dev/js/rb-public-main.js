@@ -12,6 +12,8 @@ vm.utils = {
         var hour = vm.utils.gettime();
         if (hour >= 14 || hour < 8) {
             vm.body.addClass('night');
+        } else {
+            vm.body.addClass('day');
         }
     }
 };
@@ -21,8 +23,8 @@ vm.updateBgImage = function () {
     var i = 1;
     setInterval(function() {
         i++;
-        var newBg = currentBg;
-        $(vm.bgImg).css('background-image' , currentBg);
+        $("#backgroundImage").remove();
+        $('<div id="backgroundImage" style="background-image: url(https://www.glerl.noaa.gov/metdata/mkg/mkg01.jpg)"></div>').prependTo('.site');
     }, 30000 );
 };
 vm.update = function () {
@@ -38,4 +40,4 @@ vm.loaded = function () {
 
 vm.window.on( 'load' , vm.loaded );
 
-ko.applyBindings(vm);
+// ko.applyBindings(vm);

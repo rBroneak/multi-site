@@ -11,12 +11,18 @@
 	display: flex;
 	justify-content: flex-start;
 }
+
 .flex-container {
 	display: flex;
-	&.space-between {
-		justify-content: space-between;
+	flex-direction: column;
+	@media (min-width: $BREAKPOINT-768) {
+		&.space-between {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 }
+
 // GRID
 .full-width {
 	width: 100%;
